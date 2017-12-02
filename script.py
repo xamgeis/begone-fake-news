@@ -179,7 +179,7 @@ def infer(url):
     ada_clf = joblib.load('ada_clf.pkl')
     svm_clf = joblib.load('svm_clf.pkl')
     # lstm_clf = "lstm_epoch10.h5"
-    lstm_clf = "good_one.h5"
+    # lstm_clf = "good_one.h5"
 
     mnb_score = mnb_clf.predict_proba(X_tfidf)[0][1]
     ada_score = ada_clf.predict_proba(X_tfidf)[0][1]
